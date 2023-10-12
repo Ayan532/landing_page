@@ -1,0 +1,353 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #2f1893;
+}
+.container {
+  width: 1024px;
+  padding: 30px;
+}
+
+
+/*----------------------------------- NAVBAR DESIGN -------------------------------------*/
+.navbar-container {
+  color: white;
+  padding: 10px 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.links > button {
+  padding: 10px;
+  border-radius: 100px;
+  background-color: #e93a7d;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/*----------------------------------- Hero DESIGN -------------------------------------*/
+
+.hero {
+  display: flex;
+
+  justify-content: center;
+  margin-top: 100px;
+  gap: 35px;
+}
+
+/*----------------------------------- Hero Content DESIGN -------------------------------------*/
+.hero-content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.hero-heading > h1 {
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  color: white;
+  margin-bottom: 10px;
+}
+.hero-body > p {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: white;
+}
+
+.hero-content-container > button {
+  background-color: #e93a7d;
+  width: 140px;
+  border-radius: 100px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*----------------------------------- Hero Signup DESIGN -------------------------------------*/
+
+.signup {
+  flex: 1;
+  height: 70vh;
+
+  padding: 10px;
+  background-color: white;
+}
+
+.signup-content {
+  padding: 10px;
+}
+
+.sign-container > h1 {
+  text-align: center;
+  margin-top: 10px;
+  color: #1e0e62;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.input-container input {
+  width: 330px;
+  height: 50px;
+  padding: 10px;
+  margin: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #000; 
+}
+
+.input-container input::placeholder {
+  color: #15143966; 
+}
+
+.input-terms-container {
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.input-terms-container label {
+  color: rgba(21, 20, 57, 0.4);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-left: 5px;
+}
+
+.signup-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-button {
+  margin-top: 20px;
+
+  width: 330px;
+  height: 50px;
+  background: #482be7; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px; 
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.divider-container {
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-container .or-divider {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; 
+  opacity: 0.9;
+  color: #15143966;
+  padding: 3px;
+}
+
+.twitter-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twitter-button {
+  margin-top: 20px;
+
+  width: 330px;
+  height: 50px;
+  background: #1da1f2; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px; 
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sign-in-link {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-link p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: #15143966;
+}
+.sign-in-link a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #25dac5;
+}
+
+
+
+
+/*----------------------------------- Media Queries -------------------------------------*/
+
+@media screen and (max-width: 750px) {
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .signup {
+    min-width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+    .container{
+        width: 100%;
+    }
+    .hero-heading > h1 {
+        font-size: 45px;
+        line-height: 50px;
+        color: white;
+        margin-bottom: 5px;
+      }
+      .hero-body > p {
+        font-size: 18px;
+       
+        font-weight: 500;
+        line-height: 32px;
+        color: white;
+      }
+      .signup{
+      width: 100%
+      }
+      .input-terms-container{
+        margin-left:  15px;
+      }
+      .input-terms-container >svg {
+       width: 20px;
+      }
+
+      .input-terms-container label {
+        color: rgba(21, 20, 57, 0.4);
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 10px;
+        margin-left: 5px;
+      }
+     
+}
+
+
+/*----------------------------------- Drawer DESIGN -------------------------------------*/
+
+@media screen and (max-width: 570px) {
+  .links {
+    display: none;
+  }
+
+  .sidebar-button{
+    display: flex !important; 
+  }
+  
+} 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:  #2f1893;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav button{
+    background-color: #e93a7d;
+    padding: 8px 8px 8px 32px;
+    margin-left: 15px;
+    margin-top: 10px;
+  width: 140px;
+  border-radius: 100px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidebar-button {
+    display: none;
+    width: 70px;
+    border-radius: 10px;
+    font-size: larger;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  @media screen and (max-height: 570px) {
+   
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
